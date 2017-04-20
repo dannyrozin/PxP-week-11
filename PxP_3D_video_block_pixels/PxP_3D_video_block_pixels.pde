@@ -2,16 +2,16 @@
 // Daniel Rozin
 // creates 3D block pixels using colors from camera
 // move mouse X to rotate, mouse Y to zoom
-// uses Kinect 2 and uses the raw depth data -PXP methods in the bottom
+
 
 
 import processing.video.*;
 
-int cell = 20;                                                      // this will be the size of our blocks
+int cell = 20;                                                   // this will be the size of our blocks
 int count=0;
 Capture video;
 void setup() {
-  size(1280, 720, P3D);
+  size(1280, 720, P3D);                                         // must be P3D
   video= new Capture(this, width, height);
   video.start();
   noStroke();

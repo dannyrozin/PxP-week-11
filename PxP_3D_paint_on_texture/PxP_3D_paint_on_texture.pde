@@ -43,15 +43,15 @@ void draw() {
 }
 
 void mouseDragged() {
-  ourTexture.loadPixels();
-  for (int x = 0; x < 20; x++) {
+  ourTexture.loadPixels();                                            // get a hold of the pixels of the texture PImage
+  for (int x = 0; x < 20; x++) {                                      // visit 20 pixels around the mouse
     for (int y = 0; y< 20; y++) {
-      int paintX= constrain(x+mouseX-width/2, 0, 499);
+      int paintX= constrain(x+mouseX-width/2, 0, 499);              // make sure we are not out of bounds
       int paintY= constrain( y+mouseY, 0, 499);
        if (keyPressed){
-          PxPSetPixel(paintX, paintY, 255, 255, 0, 0, ourTexture.pixels, ourTexture.width);
+          PxPSetPixel(paintX, paintY, 255, 255, 0, 0, ourTexture.pixels, ourTexture.width);             // erase by seting Alpha to 0
        }else{
-         PxPSetPixel(paintX, paintY, 255, 255, 0, 255, ourTexture.pixels, ourTexture.width);
+         PxPSetPixel(paintX, paintY, 255, 255, 0, 255, ourTexture.pixels, ourTexture.width);             // paint yellow
        }
     }
   }
