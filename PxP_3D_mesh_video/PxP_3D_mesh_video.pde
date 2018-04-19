@@ -1,5 +1,4 @@
-
-// The world pixel by pixel 2016
+// The world pixel by pixel 2018
 // Daniel Rozin
 // creates 3D mesh using colors from camera
 // move mouse X to rotate, mouse Y to zoom
@@ -23,7 +22,7 @@ void draw() {
   translate(-width/2, -height/2, 0);                             // translating back so our coordinates are synced between screen and video
   if (video.available ()) video.read();
   video.loadPixels();
-  //video.filter(BLUR, cell);                                    // try bluring to soften
+  video.filter(BLUR, cell);                                    // try bluring to soften
   for (int x=0; x< video.width-cell; x+= cell) {                      // visiting all pixels skipping every cell amount
     for (int y=0; y< video.height-cell; y+= cell) {
       beginShape();                                                  // we will make two triangles for each cell, start the first triangle
