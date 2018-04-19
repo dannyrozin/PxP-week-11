@@ -1,4 +1,4 @@
-// The world pixel by pixel 2016
+// The world pixel by pixel 2018
 // Daniel Rozin
 // creates 3D block pixels using colors from camera
 // move mouse X to rotate, mouse Y to zoom

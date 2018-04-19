@@ -1,4 +1,4 @@
-// The world pixel by pixel 2016
+// The world pixel by pixel 2018
 // Daniel Rozin
 // paint on texture
 // drag mouse on right half of screen to paint. press key while painting to erase to transparant
@@ -49,7 +49,7 @@ void mouseDragged() {
       int paintX= constrain(x+mouseX-width/2, 0, 499);              // make sure we are not out of bounds
       int paintY= constrain( y+mouseY, 0, 499);
        if (keyPressed){
-          PxPSetPixel(paintX, paintY, 255, 255, 0, 0, ourTexture.pixels, ourTexture.width);             // erase by seting Alpha to 0
+          PxPSetPixel(paintX, paintY, 0, 0, 0, 0, ourTexture.pixels, ourTexture.width);             // erase by seting Alpha to 0
        }else{
          PxPSetPixel(paintX, paintY, 255, 255, 0, 255, ourTexture.pixels, ourTexture.width);             // paint yellow
        }

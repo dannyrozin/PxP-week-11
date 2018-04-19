@@ -1,4 +1,4 @@
-// The world pixel by pixel 2017
+// The world pixel by pixel 2018
 // Daniel Rozin
 // creates 3D grid of boxes
 // move mouse X Y to rotate

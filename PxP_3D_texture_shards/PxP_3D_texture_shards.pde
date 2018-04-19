@@ -1,8 +1,7 @@
-
-// The world pixel by pixel 2017
+// The world pixel by pixel 2018
 // Daniel Rozin
 // draw shapes with texture
-// click mouse to draw shapes
+// click mouse to draw shapes, press key to make them fall
 
 
 Shard[] shards = new Shard[0];            //an empty array that will hold our shard objects as we add them
@@ -37,8 +36,6 @@ class Shard {                                // class to hold shard data and fun
   Shard(int x, int y) {                      // constructor
     locX= x;
     locY= y;
-
-
     for (int i = 0; i < 4; i++) {
       int randi= (int)random (10, 120);
       corners[i][0]= randi;

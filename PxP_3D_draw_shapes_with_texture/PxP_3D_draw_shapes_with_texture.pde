@@ -1,5 +1,5 @@
 
-// The world pixel by pixel 2016
+// The world pixel by pixel 2018
 // Daniel Rozin
 // draw shapes with texture
 // drag mouse to draw shapes
