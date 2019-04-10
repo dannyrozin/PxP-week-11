@@ -1,4 +1,4 @@
-// The world pixel by pixel 2018
+// The world pixel by pixel 2019
 // Daniel Rozin
 // creates 3D block pixels using colors from camera
 // move mouse X to rotate, mouse Y to zoom
@@ -30,9 +30,9 @@ void draw() {
   for (int x=0; x< video.width; x+= cell) {                      // visiting all pixels skipping every cell amount
     for (int y=0; y< video.height; y+= cell) {
       PxPGetPixel(x, y, video.pixels, width);                    // get the RGB of the pixel
-      float z = (R+G+B)/3;                                       // calculate Z as the average RGB which is brightness
+     float z = (R+G+B)/3;                                       // calculate Z as the average RGB which is brightness
       //float z = sin(radians (count+x+y) )*50.0;                // this option applyes a sine wave for the Z instead of brightness
-      // float z = sin( radians(count+dist(x,y,width/2,height/2)))*50;       // this option calculates the Z according to distance from center
+     // float z = sin( radians(count+dist(x,y,width/2,height/2)))*50;       // this option calculates the Z according to distance from center
       fill(R, G, B);                                            // set the fill to the color of the video
       pushMatrix();                                              // push the matrix so we can pop it later and get a constant matrix fr all pixels
       translate(x, y,-z/2);                                      // translate to the position of our pixel minus half the z to get a flat back

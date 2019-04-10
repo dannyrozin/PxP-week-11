@@ -1,4 +1,4 @@
-// The world pixel by pixel 2018
+// The world pixel by pixel 2019
 // Daniel Rozin
 // paint on texture
 // drag mouse on right half of screen to paint. press key while painting to erase to transparant
@@ -8,9 +8,9 @@ float zoom = 1;
 float angle = 0;
 void setup() 
 { 
-  size(1000, 500, P3D); 
+  size(1000, 500, P3D);
   ourTexture = createImage(500, 500, ARGB);                                                                 // create an image with alpha
-  fromFile = loadImage("http://foundtheworld.com/wp-content/uploads/2015/12/Eiffel-Tower-3.jpg");           // load file
+  fromFile = loadImage("https://amp.thisisinsider.com/images/58d919eaf2d0331b008b4bbd-750-562.jpg");           // load file
   ourTexture.set(0, 0, fromFile);                                                                          // copy the file into the image with alpha
   ourTexture.resize(500, 500);
   noStroke();

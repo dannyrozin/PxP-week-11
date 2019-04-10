@@ -1,4 +1,4 @@
-// The world pixel by pixel 2018
+// The world pixel by pixel 2019
 // Daniel Rozin
 // creates 3D mesh using colors from camera
 // move mouse X to rotate, mouse Y to zoom
