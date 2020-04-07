@@ -1,4 +1,4 @@
-// The world pixel by pixel 2019
+// The world pixel by pixel 2020
 // Daniel Rozin
 // simple shape with video texture
 
@@ -6,11 +6,12 @@ import processing.video.*;
 
 Capture video;
 
-float zoom = 1;
+float zoom = 2;
 void setup() 
 { 
-  size(1024, 768, P3D); 
-  video = new Capture(this, width, height);
+  size(1280, 720, P3D); 
+  String videoList[] = Capture.list();
+  video = new Capture(this, width, height, videoList[0]);
   video.start();
  
 }
