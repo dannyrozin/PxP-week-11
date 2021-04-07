@@ -1,4 +1,4 @@
-// The world pixel by pixel 2020
+// The world pixel by pixel 2021
 // Daniel Rozin
 // paint on texture
 // drag mouse on right half of screen to paint. press key while painting to erase to transparant
@@ -10,7 +10,8 @@ void setup()
 { 
   size(1000, 500, P3D);
   ourTexture = createImage(500, 500, ARGB);                                                                 // create an image with alpha
-  Eiffel = loadImage("https://amp.thisisinsider.com/images/58d919eaf2d0331b008b4bbd-750-562.jpg");           // load file
+  Eiffel = loadImage("hamster.jpg");           // load file
+ 
   ourTexture.set(0, 0, Eiffel);                                                                          // copy the file into the image with alpha
   ourTexture.resize(500, 500);
   noStroke();

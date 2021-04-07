@@ -1,4 +1,4 @@
-// The world pixel by pixel 2020
+// The world pixel by pixel 2021
 // Daniel Rozin
 // Wooden Mirror- grid of boxes rotating in 3D according to pixel brightnesss
 // drag mouse to change box sizes

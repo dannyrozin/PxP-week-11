@@ -1,5 +1,5 @@
 
-// The world pixel by pixel 2020
+// The world pixel by pixel 2021
 // Daniel Rozin
 // simple shape with color gradation
 

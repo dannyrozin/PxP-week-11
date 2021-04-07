@@ -1,5 +1,5 @@
 
-// The world pixel by pixel 2020
+// The world pixel by pixel 2021
 // Daniel Rozin
 // simple shape with image texture
 
@@ -11,7 +11,7 @@ float zoom = 1;
 void setup() 
 { 
   size(1000, 800, P3D); 
-  ourTexture = loadImage("https://amp.thisisinsider.com/images/58d919eaf2d0331b008b4bbd-750-562.jpg");
+  ourTexture = loadImage("https://s.france24.com/media/display/17b4c876-8853-11ea-9921-005056a964fe/w:1280/p:4x3/masks.jpg");
   ourTexture.resize(width, height);                                  // resizing the texture image helps so the coords for the geometry and corespond
 }
 
