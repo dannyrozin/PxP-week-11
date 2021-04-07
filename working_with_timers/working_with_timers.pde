@@ -14,15 +14,15 @@ void setup() {
 
 void draw() {  
   background (0);
-  if (millis()-lastRectTime> rectInterval) {    // check the first timer
-    showRect= !showRect;                       // change the state              
-    lastRectTime= millis();                     // if it is due, reset it
+  if (millis()-lastRectTime> rectInterval) {      // check the first timer
+    showRect= !showRect;                          // change the state              
+    lastRectTime= millis();                        // if it is due, reset it
   }
-  if (millis()-lastCircleTime> circleInterval) {
+  if (millis()-lastCircleTime> circleInterval) {    // check the second timer
     showCircle= !showCircle;
     lastCircleTime= millis();
   }
 
   if (showRect) rect( 200, 100, 100, 100);           // act on the state of the first timer
-  if (showCircle) ellipse( 400, 150, 100, 100);
+  if (showCircle) circle( 400, 150, 100);
 }
