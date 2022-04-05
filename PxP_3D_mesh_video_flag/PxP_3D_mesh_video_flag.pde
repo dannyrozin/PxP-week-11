@@ -1,4 +1,4 @@
-// The world pixel by pixel 2021
+// The world pixel by pixel 2022
 // Daniel Rozin
 // creates 3D mesh according to sine wave and uses movie as texture
 // move mouse X to rotate

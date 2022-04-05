@@ -1,4 +1,4 @@
-// The world pixel by pixel 2021
+// The world pixel by pixel 2022
 // Daniel Rozin
 // creates 3D grid of boxes
 // move mouse X Y to rotate

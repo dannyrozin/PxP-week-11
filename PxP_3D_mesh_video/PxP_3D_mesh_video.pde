@@ -1,4 +1,4 @@
-// The world pixel by pixel 2021
+// The world pixel by pixel 2022
 // Daniel Rozin
 // creates 3D mesh using colors from camera
 // move mouse X to rotate, mouse Y to zoom
@@ -8,8 +8,10 @@ int cell = 10;                                                           // this
 Capture video;
 void setup() {
   size(720, 480, P3D);
-  video= new Capture(this, width, height);
+    String videoList[] = Capture.list();
+  video = new Capture(this, width, height, videoList[0]);
   video.start();
+  image(video,0,0,1,1); // neeed to image vifeo at least once in p3d
   noStroke();
 }
 
@@ -22,7 +24,7 @@ void draw() {
   translate(-width/2, -height/2, 0);                             // translating back so our coordinates are synced between screen and video
   if (video.available ()) video.read();
   video.loadPixels();
-  video.filter(BLUR, cell);                                    // try bluring to soften
+  //video.filter(BLUR, 5);                                    // try bluring to soften
   for (int x=0; x< video.width-cell; x+= cell) {                      // visiting all pixels skipping every cell amount
     for (int y=0; y< video.height-cell; y+= cell) {
       beginShape();                                                  // we will make two triangles for each cell, start the first triangle

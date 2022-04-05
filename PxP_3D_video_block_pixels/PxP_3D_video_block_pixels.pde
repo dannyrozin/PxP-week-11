@@ -1,4 +1,4 @@
-// The world pixel by pixel 2021
+// The world pixel by pixel 2022
 // Daniel Rozin
 // creates 3D block pixels using colors from camera
 // move mouse X to rotate, mouse Y to zoom
@@ -16,6 +16,7 @@ void setup() {
   video= new Capture(this, width, height, cameras[0]);
   video.start();
   noStroke();
+  image(video, 0,0,1,1);  // must image video once for it to work in P3D
 }
 
 void draw() {

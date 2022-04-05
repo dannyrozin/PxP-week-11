@@ -1,4 +1,4 @@
-// The world pixel by pixel 2021
+// The world pixel by pixel 2022
 // Daniel Rozin
 // paint on texture
 // drag mouse on right half of screen to paint. press key while painting to erase to transparant
