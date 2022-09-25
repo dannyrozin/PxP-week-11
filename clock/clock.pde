@@ -5,7 +5,7 @@
 void setup() { 
   size(500,500);
   smooth();
-  fill(0);
+  fill(0,0,0);
   stroke(255);
 }
 
